@@ -78,8 +78,10 @@ public class Sol1 {
             res_1 += processString_1(line);
             res_2 += processString_2(line);
         }
-        System.out.println(res_1);
-        System.out.println(res_2);
+        System.out.print("Result for Numerical Processing 1 : ");
+        System.out.print(res_1 + "\n");
+        System.out.print("Result for Numerical Processing 2 : ");
+        System.out.print(res_2 + "\n");
         sc.close();
     }
 }
