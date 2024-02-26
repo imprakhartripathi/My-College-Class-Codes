@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 
-public class Sol1 {
+public class Sol1AOC2023 {
 
     public static int processString_1(String str) {
         // return 0;
