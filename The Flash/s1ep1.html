@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flash - Season 1 Episode 1</title>
+        <link rel="icon" href="flash logo.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <a href="FlashFIix.html"><img src="flashflix logo.png" alt="Flash Logo" height="15%" width="15%"></a>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+    </style>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+   <style>
+    body {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-family: Arial, sans-serif;
+    }
+    #video-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #video-player {
+        width: 100%;
+    }
+</style>
+    </head>
+    <body bgcolor="141414" alink="White" vlink="white" link="White">
+        <br>
+        <center>
+        <font color="White">
+           <h2>Flash Season 1 Episode 1: Pilot</h2>
+           <h4>Tue, Oct 7, 2014 <br>CSI investigator Barry Allen awakens from a coma, nine months after he was hit by lightning, and discovers he has superhuman speed. 
+            <br><br>IMDB: 8.3/10 (9.4K)</h4>
+        </font>
+        <div id="video-container">
+            <video id="video-player" controls>
+                <source src="Flash Season 1 720p English\Episodes\Episode (1).mkv" type="video/mp4">
+            </video>
+        </div>
+        <a href="s1ep2.html"><h3>Next Episode</h3></a>
+        <script>
+            const videoPlayer = document.getElementById("video-player");
+    
+            function skipForward() {
+                videoPlayer.currentTime += 10;
+            }
+    
+            function skipBackward() {
+                videoPlayer.currentTime -= 10;
+            }
+    
+            function toggleFullScreen(e) {
+                if (e.key === 'f') {
+                    if (document.fullscreenElement) {
+                        document.exitFullscreen();
+                    } else {
+                        videoPlayer.requestFullscreen();
+                    }
+                }
+            }
+    
+            document.addEventListener('keydown', toggleFullScreen);
+            document.getElementById("video-player").addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') {
+                    skipForward();
+                } else if (e.key === 'ArrowLeft') {
+                    skipBackward();
+                }
+            });
+        </script>
+        </center>
+    </body>
+
+</html>
