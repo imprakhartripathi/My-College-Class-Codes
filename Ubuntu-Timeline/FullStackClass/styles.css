@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container{
+    text-align: center;
+    color: black;
+}
+.main-container h2{
+    color: #bb3676;
+    text-align: center;
+}
+.main-container button{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    /*background-color: #E50914;*/
+    background-color: #bb3676;
+    border: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.main-container button:hover{
+    /*background-color: #70050a;*/
+    background-color: #631d3f;
+    transition: 0.3s;
+}
+
+.list{
+    text-align: left;
+}
+.list h2{
+    text-align: left;
+}
+
+.form{
+    text-align: left;
+}
